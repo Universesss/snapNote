@@ -1,0 +1,79 @@
+/* Genel */
+body {
+    background: #f5f5f5;
+    color: #222;
+    transition: background .2s ease, color .2s ease;
+}
+
+/* Card rounded */
+.card {
+    border-radius: 12px;
+}
+
+/* Drop zone */
+.drop-zone {
+    border: 2px dashed #6c757d;
+    padding: 28px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fafafa;
+    user-select: none;
+}
+
+.drop-zone p {
+    margin: 0;
+}
+
+.drop-zone.dragover {
+    background: #e8f0ff;
+    border-color: #0d6efd;
+}
+
+/* Preview */
+#preview {
+    max-height: 320px;
+    object-fit: contain;
+}
+
+/* Reklam */
+.ad-container {
+    background: #e9ecef;
+    padding: 18px;
+    border-radius: 10px;
+    color: #495057;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background: #0f1115 !important;
+    color: #e9eef6 !important;
+}
+
+.dark-mode .card {
+    background: #141518 !important;
+    color: #e9eef6 !important;
+    border-color: rgba(255, 255, 255, 0.04);
+}
+
+.dark-mode .drop-zone {
+    background: #161618 !important;
+    border-color: #444;
+    color: #ddd;
+}
+
+.dark-mode .ad-container {
+    background: #1a1a1a;
+    color: #bbb;
+}
+
+/* textarea */
+textarea {
+    resize: none;
+}
+
+/* focus styles for accessibility */
+.drop-zone:focus {
+    outline: 3px solid rgba(13, 110, 253, 0.15);
+    outline-offset: 2px;
+}
